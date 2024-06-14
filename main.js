@@ -1,2 +1,6 @@
 import { fetchData } from "./poke-api.js";
-const data = fetchData()
+import { pokeProcess } from "./poke-img.js";
+
+
+const fetchingData = fetchData()
+const pokeProcessing = pokeProcess()
