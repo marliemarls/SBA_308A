@@ -1,11 +1,17 @@
 //this file is to import data from the pokemon api which i will sort thorugh in a separate file.
+// const axios = require('axios/dist/node/axios.cjs');
 
-export async function fetchData() {
-  try {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0")
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  } catch (err) {
-    console.error("Error: " + err);
-  }
+//importing pokemon data with api call to be sorted through in poke-img
+
+export async function fetchData(){
+ try{
+    const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0");
+
+ if(response.status !== 200) {
+    throw new Error;
+ }
+ return response.data
+ } catch (err) {
+    console.error("Error: " + err)
 }
+} 
