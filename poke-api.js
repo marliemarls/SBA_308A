@@ -1,7 +1,4 @@
 //this file is to import data from the pokemon api which i will sort thorugh in a separate file.
-// const axios = require('axios/dist/node/axios.cjs');
-
-//importing pokemon data with api call to be sorted through in poke-img
 
 export async function fetchData(){
  try{

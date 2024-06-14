@@ -1,4 +1,3 @@
-// const axios = require('axios/dist/node/axios.cjs');
 import { fetchData } from "./poke-api.js";
 
 
