@@ -1,9 +1,14 @@
 import { fetchData } from "./poke-api.js";
 
 export async function pokeProcess(){
+    try {
     const pokeData = fetchData()
-    const newData = pokeData.then(res => console.log(res))
+    const newData = pokeData
     console.log(newData)
+    } catch (error) {
+        console.error(error)
+    }
+    
 
     // const pokeArr = await Promise.all(pokeData.results.map(async (pokeObj) => {
     //     const response = await pokeObj
