@@ -1,0 +1,8 @@
+body{
+    display: grid;
+}
+div.pokeList{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}

@@ -11,12 +11,11 @@ export async function pokeProcess() {
     // console.log(pokeArr[0])
     
     pokeArr.forEach(pokemon => {
-        // console.log(pokemon)
+
         const i = pokemon.types.flatMap((obj)=> obj.type.name);
         const pokeDiv = document.querySelector(".pokeList");
         const pokeList = document.createElement('p');
         const pokeImg = document.createElement("img");
-    
     
         pokeImg.src = pokemon.sprites.front_default
         pokeList.classList.add(...i)
