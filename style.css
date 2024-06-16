@@ -1,20 +1,24 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("./img/pokedexBackground.webp");
-  /* display: grid; */
+  width: 90%;
+  height: 90vmin;
 }
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
-}
+
 .pokeList {
   display: grid; 
   justify-items: center;
   justify-content: center;
+  align-content: space-between;
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: 10% 10% 10% 10%;
-  margin-top: 7%;
+  margin: 10% 0% 0% 0%;
+  padding: 0;
+  width: 600px;
+
 }
 p{
   display: flex;

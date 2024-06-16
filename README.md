@@ -3,7 +3,7 @@
 ## About The Project
  `marliemarls`, `sba_308A`, `https://www.linkedin.com/in/marliemart/`, `https://github.com/marliemarls/SBA_308A`, `SBA-project`
 
-SBA - Project 308A (this is still a work in progress)
+For this project I wanted to create a mini PokeDex with the PokemonAPI. When each Pokemon element is selected, the user should be able to hear the cry as well as see a card of information about the Pokemons type and it's most common moves. 
 
 ## Technology Stack
 
