@@ -1,13 +1,15 @@
 body {
+  background-image: url("./img/pokedexBackground.webp");
   display: grid;
 }
 .pokeList {
-  display: grid;
+  display: grid; 
   justify-items: center;
   justify-content: center;
   column-gap: 50px;
   row-gap: 50px;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: 10% 10% 10% 10%;
+  margin-top: 7%;
 }
 p{
   display: flex;

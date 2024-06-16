@@ -6,9 +6,10 @@ export async function addingAudio() {
   const pokeArr = await Promise.all(
     pokeData.results.map(async (pokeObj) => {
       const response = await axios(pokeObj);
-      console.log(response.data.cries.legacy)
+      const pokeId = response.data.id
+      console.log(response.data)
       return response.data;
     })
   );
-  console.log(pokeArr);
+//   console.log(pokeArr);
 }
