@@ -1,4 +1,4 @@
-# marlie-react-portfolio
+# SBA308A-Pokemon-API
 
 ## About The Project
  `marliemarls`, `sba_308A`, `https://www.linkedin.com/in/marliemart/`, `https://github.com/marliemarls/SBA_308A`, `SBA-project`
