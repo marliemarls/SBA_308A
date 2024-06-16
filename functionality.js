@@ -1,5 +1,11 @@
 import { fetchData } from "./poke-api.js";
 
-async function catergorizePoke(){
-    
+
+const pokeData = await fetchData()
+
+
+export async function catergorizePoke(){
+
 }
+
+catergorizePoke()
