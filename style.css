@@ -9,3 +9,9 @@ body {
   row-gap: 50px;
   grid-template-columns: 20% 20% 20%;
 }
+p{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  
+}

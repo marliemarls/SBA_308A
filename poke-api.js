@@ -2,7 +2,7 @@
 
 export async function fetchData(){
  try{
-    const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0");
+    const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10&offset=149");
 
  if(response.status !== 200) {
     throw new Error;
