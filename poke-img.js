@@ -11,7 +11,7 @@ export async function pokeProcess() {
   );
 
   pokeArr.forEach((pokemon) => {
-    const i = pokemon.types.flatMap((obj) => obj.type.name).toString();
+    const i = pokemon.types.flatMap((obj) => obj.type.name);
     const pokeName = pokemon.name;
     const upperCaseName = pokeName[0].toUpperCase() + pokeName.slice(1);
     const pokeDiv = document.querySelector(".pokeList");
@@ -19,7 +19,7 @@ export async function pokeProcess() {
     const pokeImg = document.createElement("img");
 
     pokeImg.src = pokemon.sprites.front_default;
-    pokeList.classList.add(...i);
+    pokeList.classList.add(...i, upperCaseName);
     pokeList.innerHTML = upperCaseName;
     pokeList.appendChild(pokeImg);
     pokeDiv.appendChild(pokeList);
