@@ -24,6 +24,7 @@ export async function pokeProcess() {
     audioEl.src = `./audio/${audioStr}`;
     audioEl.type = "audio"
 
+    
     pokeImg.src = pokemon.sprites.front_default;
     pokeList.classList.add(...i);
     pokeList.id = (pokeID)
