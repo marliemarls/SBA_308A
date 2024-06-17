@@ -1,31 +1,55 @@
+@import url("https://fonts.cdnfonts.com/css/depixel");
+
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./img/pokedexBackground.webp");
-  width: 90%;
-  height: 90vmin;
+  background-color: thistle;
+  width: 100vw;
+  height: 100vh; 
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: lightblue;
+    display: flex;
+    width: 400px;
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pokeList {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .pokeList {
-  display: grid; 
+  display: flex;
   justify-items: center;
   justify-content: center;
-  align-content: space-between;
-  column-gap: 50px;
-  row-gap: 50px;
-  grid-template-columns: 10% 10% 10% 10%;
-  margin: 10% 0% 0% 0%;
   padding: 0;
-  width: 600px;
-
 }
-p{
+p.psychic,
+p.grass,
+p.fire,
+p.water {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   background-color: white;
   border: solid black 1pt;
   border-radius: 3%;
-  
+  width: max-content;
+  height: max-content;
+}
+
+
+p {
+  margin: 0%;
+  font-family: "DePixel", sans-serif;
+}
+.mewto {
+  display: none;
 }

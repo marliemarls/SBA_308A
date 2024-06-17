@@ -7,8 +7,14 @@ export async function addingAudio() {
     pokeData.results.map(async (pokeObj) => {
       const response = await axios(pokeObj);
       const pokeId = response.data.id
-    //   console.log(response.data)
-      return response.data;
+      const audioStr = pokeId + ".ogg"
+      for(let i = 0; i < pokeObj.length; i++){
+        console.log(pokeObj[i])
+      }
+      
+      
+          
+      // return response.data;
     })
   );
 //   console.log(pokeArr);
