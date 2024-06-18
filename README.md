@@ -35,11 +35,6 @@ This is how to initiate a project via NPM.
    ```sh
    git clone https://github.com/marliemarls/SBA_308A
    ```
-2. Install NPM 
-   ```sh
-   npm install 
-   ```
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
