@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Pokemon API</title>
 </head>
-<body>
-    
-    <div class="pokeList"></div>
-    
-    <div class="mewto">MEWTWO is a POKéMON that was created by genetic manipulation. However, even though the scientific power of humans created this POKéMON’s body, they failed to endow MEWTWO with a compassionate heart.</div>
 
+<body>
+
+    <div class="pokeList"></div>
+
+    <!-- <div class="mewto">MEWTWO is a POKéMON that was created by genetic manipulation. However, even though the scientific power of humans created this POKéMON’s body, they failed to endow MEWTWO with a compassionate heart.</div> -->
+    <div class="buttons">
+
+        <button type="button" class="showAllBtn" onclick="showAll()">Show All</button>
+
+        <button type="button" class="btn grass" onclick="catergorizePoke('grass')">Grass</button>
+        <button type="button" class="btn fire" onclick="catergorizePoke('fire')">Fire</button>
+        <button type="button" class="btn psychic" onclick="catergorizePoke('psychic')">Psychic</button>
+        <button type="button" class="btn" onclick="catergorizePoke('water')">Water</button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>
+
 </html>

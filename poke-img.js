@@ -10,6 +10,8 @@ export async function pokeProcess() {
     })
   );
 
+  console.log(pokeArr)
+
   pokeArr.forEach((pokemon) => {
     const i = pokemon.types.flatMap((obj) => obj.type.name);
     const pokeName = pokemon.name;
@@ -27,7 +29,7 @@ export async function pokeProcess() {
     
     pokeImg.src = pokemon.sprites.front_default;
     pokeList.classList.add(...i);
-    pokeList.id = (pokeID)
+    // pokeList.id = (pokeID)
     pokeInfo.innerHTML = upperCaseName;
     pokeList.append(pokeImg, pokeInfo, audioEl);
     pokeDiv.appendChild(pokeList);
