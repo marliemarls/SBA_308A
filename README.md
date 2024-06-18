@@ -14,8 +14,7 @@ Created in [VSCode].
 | HTML       | Hyper Text Markup Language                | [HTML] |
 | CSS        | Cascading Style Sheets                    | [CSS]  |
 | JavaScript | High Level, Dynamic, Interpreted Language | [JS]   | 
-| React      | JavaScript library specialized in UX/UI   | [React]|
-| Tailwind   | Tailwind/CSS utility first framework      | [TailW]|
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -40,21 +39,11 @@ This is how to initiate a project via NPM.
    ```sh
    npm install 
    ```
-3. Install NPM packages
-   ```sh
-   npm install react-router-dom --save
-   ``` 
-4. Install Tailwind CSS
-   ```sh
-   npm install -D tailwindcss
-   npx tailwindcss init
-   ```
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[React]: https://react.dev/
 [HTML]: https://html.com/
 [JS]: https://www.javascript.com/
 [CSS]: https://www.w3.org/Style/CSS/Overview.en.html
 [VSCode]: https://code.visualstudio.com/
-[TailW]: https://tailwindcss.com/

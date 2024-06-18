@@ -1,7 +1,7 @@
 import { fetchData } from "./poke-api.js";
 import { pokeProcess } from "./poke-img.js";
 import { addingAudio } from "./extraStuff.js";
-
+import { categorizePoke } from "./functionality.js"
 const fetchingData = fetchData();
 const pokeProcessing = pokeProcess();
 const audioAdded = addingAudio();
@@ -9,7 +9,7 @@ const audioAdded = addingAudio();
 
 const pokeTypArr = ["grass", "fire", "water", "psychic"];
 const pokeList = document.querySelector(".pokeList");
-
+const categoriesOfPoke = categorizePoke()
 
 
 

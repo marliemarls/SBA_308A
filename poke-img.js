@@ -10,8 +10,6 @@ export async function pokeProcess() {
     })
   );
 
-  console.log(pokeArr)
-
   pokeArr.forEach((pokemon) => {
     const i = pokemon.types.flatMap((obj) => obj.type.name);
     const pokeName = pokemon.name;
