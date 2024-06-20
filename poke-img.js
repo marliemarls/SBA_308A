@@ -30,6 +30,6 @@ export async function pokeProcess() {
     // pokeList.id = (pokeID)
     pokeInfo.innerHTML = upperCaseName;
     pokeList.append(pokeImg, pokeInfo, audioEl);
-    pokeDiv.appendChild(pokeList);
+    pokeDiv.appendChild(pokeList); 
   });
 }
