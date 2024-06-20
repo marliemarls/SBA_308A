@@ -10,23 +10,38 @@
 </head>
 
 <body>
+    <div class="pokeHeader">
+        <h1 class="marlieHeader">Marlie's Pokedex</h1>
+    </div>
 
-    <h1 class="marlieHeader">Marlie's Pokedex</h1>
+    <div class="buttonsDiv">
 
+        <button class="testing" type="button">
+            <img src="./img/GrassIC_SV.png" alt="grass pokemon button" class="btn grass" onclick="categorizePoke()">
+        </button>
+        <button class="testing" type="button">
+            <img src="./img/FireIC_SV.png" alt="fire pokemon button" class="btn fire" onclick="categorizePoke()">
+        </button>
+        <button class="testing" type="button">
+            <img src="./img/PsychicIC_SV.png" alt="psychic pokemon button" class="btn psychic" onclick="categorizePoke()">
+        </button>
+        <button class="testing" type="button">
+            <img src="./img/WaterIC_SV.png" alt="water pokemon button" class="btn water" onclick="categorizePoke()">
+        </button>
+
+        <a href="/" class="showAllLink">
+            <button type="button" class="showAllBtn" href="/">Show All</button>
+        </a>
+        <!-- <button type="button" class="btn grass" onclick="categorizePoke()">Grass</button> -->
+        <!-- <button type="button" class="btn fire" onclick="categorizePoke()">Fire</button>
+        <button type="button" class="btn psychic" onclick="categorizePoke()">Psychic</button>
+        <button type="button" class="btn water" onclick="categorizePoke()">Water</button> -->
+    </div>
 
     <div class="pokeList"></div>
 
     <!-- <div class="mewto">MEWTWO is a POKéMON that was created by genetic manipulation. However, even though the scientific power of humans created this POKéMON’s body, they failed to endow MEWTWO with a compassionate heart.</div> -->
-    <div class="buttons">
-        <a href="/">
-            <button type="button" class="showAllBtn" href="/">Show All</button>
-        </a>
 
-        <button type="button" class="btn grass" onclick="categorizePoke()">Grass</button>
-        <button type="button" class="btn fire" onclick="categorizePoke()">Fire</button>
-        <button type="button" class="btn psychic" onclick="categorizePoke()">Psychic</button>
-        <button type="button" class="btn water" onclick="categorizePoke()">Water</button>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>

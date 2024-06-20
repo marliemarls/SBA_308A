@@ -3,11 +3,11 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  background-color: thistle;
-  width: 90vw;
-  height: 90vh; 
+  background-color: rgb(252, 242, 242);
+  width: 99vw;
+  height: 98vh; 
 }
 
 @media only screen and (max-width: 400px) {
@@ -37,12 +37,13 @@ body {
   padding: 0;
   width: auto;
   height: auto;
+  margin-top: 5em;
+  margin-bottom: 4em;
 }
 p.psychic,
 p.grass,
 p.fire,
 p.water {
-  align-items: center;
   background-color: white;
   border: solid black 1pt;
   border-radius: 3%;
@@ -53,6 +54,15 @@ p.water {
   margin: 30px;
 }
 
+.btn.grass, .btn.fire, .btn.psychic, .btn.water, .showAllBtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.showAllLink{
+  text-decoration: none;
+}
 
 p {
   margin: 0%;
@@ -60,9 +70,12 @@ p {
   text-align: center;
 }
 
-/* button{
-
-} */
+.buttonsDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+}
 /* .mewto {
   display: none;
 } */
@@ -70,3 +83,22 @@ p {
   font-family: "DePixel", sans-serif;
   text-align: center;
 }
+
+.pokeHeader{ 
+  width: 99vw;
+  background-color: #CC0000;
+}
+
+.btn{
+  /* background: none; */
+  box-sizing: none;
+  outline: none;
+  background-color: transparent;
+
+}
+
+.testing{
+  background: none;
+  border: none;
+}
+
