@@ -10,15 +10,13 @@ let pokes = document.getElementsByClassName("fire");
 
 export async function categorizePoke() {
   pokeTypArr.forEach((el) => {
-    const btn = document.querySelector(`.${el}`);
+    const btn = document.querySelector(".btn", `${el}`);
     btn.addEventListener("click", (e) => {
+
       let str = e.target.className;
       let newArr = str.split(" ");
       console.log(newArr)
-      pokeTypArr.forEach((i) => {
-        //     if(newArr[1] === pokeTypArr[i]){
-        // }
-      });
+      const evEl = e
     });    
   });
 
