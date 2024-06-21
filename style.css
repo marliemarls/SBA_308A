@@ -10,27 +10,10 @@ body {
   height: 98vh; 
 }
 
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: lightblue;
-    display: flex;
-    width: 400px;
-    height: 781px;
-  }
-  .pokeList {
-    display: grid;
-    grid-template-columns: auto auto;
-
-  }
-
-}
-@media only screen and (min-width: 400px) {
-
-}
-
 .pokeList {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
   justify-items: center;
   justify-content: center;
   align-items: center;
@@ -56,9 +39,9 @@ p.water {
 
 .btn.grass, .btn.fire, .btn.psychic, .btn.water, .showAllBtn{
   display: flex;
-  justify-content: space-between;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .showAllLink{
   text-decoration: none;
@@ -72,6 +55,7 @@ p {
 
 .buttonsDiv{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 99vw;

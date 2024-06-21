@@ -26,9 +26,8 @@ export async function categorizePoke(type) {
   pokeTypArr.forEach((el) => {
 
     const btn = document.querySelector(`.${el}`);
-    // console.log(btn)
+    console.log(btn)
     btn.addEventListener("click", (e) => {
-
       let str = e.target.className;
       let newArr = str.split(" ");
       console.log(newArr)
