@@ -1,5 +1,7 @@
 //this file is to import data from the pokemon api which i will sort thorugh in a separate file.
 
+//at least this works 🫥
+
 export async function fetchData(){
  try{
     const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10&offset=149");

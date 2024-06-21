@@ -1,5 +1,6 @@
 import { fetchData } from "./poke-api.js";
 
+//this function is to populate the pokelist div i created in html that will grab the pokemon
 export async function pokeProcess() {
   const pokeData = await fetchData();
   const pokeDiv = document.querySelector(".pokeList");

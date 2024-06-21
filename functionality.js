@@ -6,7 +6,11 @@ const pokeProcessing = await pokeProcess();
 const pokeTypArr = ["grass", "fire", "water", "psychic"];
 const pokeList = document.querySelector(".pokeList");
 let pokes = document.getElementsByClassName("fire");
+const data = pokeData.results
+// console.log(data)
 
+
+//i dont even know honestly 
 // function showAll () {
 //   pokeList.innerHTML = '';
 //   pokeTypArr.forEach((poke) => {
@@ -19,19 +23,18 @@ let pokes = document.getElementsByClassName("fire");
 
 // showAll()
 
-export async function categorizePoke(type) {
-// const pokeType = type
-//   console.log(pokeTypArr)
+export async function categorizePoke() {
 
   pokeTypArr.forEach((el) => {
 
     const btn = document.querySelector(`.${el}`);
-    console.log(btn)
+    // console.log(btn)
     btn.addEventListener("click", (e) => {
       let str = e.target.className;
       let newArr = str.split(" ");
-      console.log(newArr)
-      const evEl = e
+      if(newArr[1] === el) {
+        
+      }
     });    
   });
 
