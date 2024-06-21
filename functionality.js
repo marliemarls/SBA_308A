@@ -7,10 +7,26 @@ const pokeTypArr = ["grass", "fire", "water", "psychic"];
 const pokeList = document.querySelector(".pokeList");
 let pokes = document.getElementsByClassName("fire");
 
+// function showAll () {
+//   pokeList.innerHTML = '';
+//   pokeTypArr.forEach((poke) => {
+//       let pokes = document.getElementsByClassName(...poke)
+//       let newPokeList = document.createElement("div")
+//       newPokeList.innerHTML = `<b>${pokes}</b>`;
+//       pokeList.append(newPokeList)
+//   })
+// }
 
-export async function categorizePoke() {
+// showAll()
+
+export async function categorizePoke(type) {
+// const pokeType = type
+//   console.log(pokeTypArr)
+
   pokeTypArr.forEach((el) => {
-    const btn = document.querySelector(".btn", `${el}`);
+
+    const btn = document.querySelector(`.${el}`);
+    // console.log(btn)
     btn.addEventListener("click", (e) => {
 
       let str = e.target.className;

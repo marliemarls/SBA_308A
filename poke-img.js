@@ -2,6 +2,8 @@ import { fetchData } from "./poke-api.js";
 
 export async function pokeProcess() {
   const pokeData = await fetchData();
+  const pokeDiv = document.querySelector(".pokeList");
+  pokeDiv.innerHTML = ''
 
   const pokeArr = await Promise.all(
     pokeData.results.map(async (pokeObj) => {
@@ -15,7 +17,6 @@ export async function pokeProcess() {
     const pokeName = pokemon.name;
     const pokeID = pokemon.id
     const upperCaseName = pokeName[0].toUpperCase() + pokeName.slice(1);
-    const pokeDiv = document.querySelector(".pokeList");
     const pokeList = document.createElement("p");
     const pokeInfo = document.createElement("p");
     const pokeImg = document.createElement("img");
